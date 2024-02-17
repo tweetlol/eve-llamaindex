@@ -6,7 +6,8 @@
 - uses localy running llm model (from [ollama.com/library](https://ollama.com/library))
 - huggingface embedding model
 
-## general setup
+
+## env-setup.sh script
 
 - download ollama and the local llm
 
@@ -36,7 +37,7 @@ source /venv/bin/activate
 pip install llama-index-core llama-index-readers-file llama-index-llms-ollama llama-index-embeddings-huggingface
 ```
 
-- proceed to edit the script parameters
+- proceed to edit the eve-lammaindex.py script variables
 
 ## eve-lamma.py script
 
