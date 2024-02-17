@@ -1,7 +1,9 @@
 # eve-llamaindex
 
-- llamaindex RAG setup
-- local llm model (from [ollama.com/library](https://ollama.com/library))
+## llamaindex RAG setup
+
+- will access .pdf files saved in `../data` directory (default) and extract knowledge in attemt to answer a query
+- uses localy running llm model (from [ollama.com/library](https://ollama.com/library))
 - huggingface embedding model
 
 ## general setup
