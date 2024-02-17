@@ -14,3 +14,11 @@ ___
 
 `pip install llama-index-core llama-index-readers-file llama-index-llms-ollama llama-index-embeddings-huggingface`
 
+- download ollama for local llm
+
+`curl -fsSL https://ollama.com/install.sh | sh`
+
+`ollama pull orca-mini`
+
+- local llm can be prompted with: `ollama run orca-mini`
+
