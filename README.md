@@ -13,7 +13,9 @@
 
 ```sh
 curl -fsSL https://ollama.com/install.sh | sh
+```
 
+```sh
 ollama pull orca-mini
 ```
 
@@ -27,7 +29,9 @@ ollama run orca-mini
 
 ```sh
 python3 -m venv venv
+```
 
+```sh
 source /venv/bin/activate
 ```
 
