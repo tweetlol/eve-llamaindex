@@ -7,6 +7,7 @@ ___
 - setup a virtual python enviroment
 
 `python3 -m venv venv`
+
 `source /venv/bin/activate`
 
 - local setup with Ollama and HuggingFace embeddings
