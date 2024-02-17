@@ -87,4 +87,4 @@ print(response)
 
 ## useful resources
 
-[llama index docs](https://docs.llamaindex.ai/en/stable/index.html)
+[llamaindex docs](https://docs.llamaindex.ai/en/stable/index.html)
