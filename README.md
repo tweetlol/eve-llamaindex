@@ -23,7 +23,7 @@ ollama pull orca-mini
 ollama run orca-mini
 ```
 
-- setup a virtual python enviroment
+- setup a virtual python environment
 
 ```sh
 python3 -m venv venv
