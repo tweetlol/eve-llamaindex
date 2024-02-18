@@ -48,7 +48,7 @@ pip install llama-index-core llama-index-readers-file llama-index-llms-ollama ll
 
 - proceed to edit the eve-lammaindex.py script variables
 
-## eve-lamma.py script
+## eve-lammaindex.py script
 
 ```py
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
