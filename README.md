@@ -6,10 +6,9 @@
 - uses localy running llm model (from [ollama.com/library](https://ollama.com/library))
 - huggingface embedding model
 
+## install-ollama.sh script
 
-## env-setup.sh script
-
-- download ollama and the local llm
+- download ollama to run a local llm instance
 
 ```sh
 curl -fsSL https://ollama.com/install.sh | sh
@@ -19,13 +18,19 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama pull orca-mini
 ```
 
-- **note:** local llm can be prompted with following command:
+- **note:** local llm can be prompted in terminal with following command:
 
 ```sh
 ollama run orca-mini
 ```
 
-- setup a virtual python environment
+## env-setup.sh script
+
+- make sure you have venv installed, setup a virtual python environment
+
+```sh
+sudo apt install python3.10-venv
+```
 
 ```sh
 python3 -m venv venv
@@ -35,7 +40,7 @@ python3 -m venv venv
 source /venv/bin/activate
 ```
 
-- install prequisites
+- install required modules
 
 ```sh
 pip install llama-index-core llama-index-readers-file llama-index-llms-ollama llama-index-embeddings-huggingface
@@ -83,11 +88,11 @@ Settings.llm = Ollama(model=language_model, request_timeout=3600.0)
 
 ```py
 # user interface
-print(f"# hello, this is {language_model} over dataset embedded with {embedding_model} contained at {data_corpus_directory}, at your service")
-query = input(f"# ask a question:\n")
+print(f"[ eve ] Hello, this is {language_model} over dataset embedded with {embedding_model} contained at {data_corpus_directory}, at your service.")
+query = input(f">>> \n")
 response = query_engine.query(query)
 print("-" * 100)
-print(response)
+print("[ eve ] " + response)
 ```
 
 ## useful resources

@@ -28,9 +28,9 @@ query_engine = index.as_query_engine()
 print(f"    > loading query engine:        {query_engine}")
 
 # user interface
-print(f"# hello, this is {language_model} over dataset embedded with {embedding_model} contained at {data_corpus_directory}, at your service")
-query = input(f"# ask a question:\n")
+print(f"[ eve ] Hello, this is {language_model} over dataset embedded with {embedding_model} contained at {data_corpus_directory}, at your service.")
+query = input(f">>> \n")
 response = query_engine.query(query)
 print("-" * 100)
-print(response)
+print("[ eve ] " + response)
 
